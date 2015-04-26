@@ -1,0 +1,14 @@
+apply plugin: 'android'
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
+}
+
+dependencies {
+    compile files(rootProject.core_jar_path, rootProject.chat_jar_path, rootProject.videochat_jar_path)
+    compile files('libs/Pubnub-Android-3.7.2.jar')
+
+}
+
+

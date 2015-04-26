@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp">
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@drawable/background"
+        android:layout_gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+
+    <com.quickblox.videochatsample.ui.view.OpponentSurfaceView
+        android:id="@+id/opponentView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/txtName"/>
+
+
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relativeLayout">
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.quickblox.videochatsample.ui.activity.SingleTouchEventView
+                android:id="@+id/view2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="ViewOverlay" />
+        </RelativeLayout>
+
+</FrameLayout>
+<!-- From: file:/Users/kthethi/Documents/test/quickblox-android-sdk-master/sample-videochat/src/main/res/layout/video_chat_layout.xml -->
